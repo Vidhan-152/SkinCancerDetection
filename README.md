@@ -69,18 +69,6 @@ Set the model paths in the sidebar to point to your trained `.pth` files.
 
 ---
 
-## 🔧 Refinements vs Original Code
-
-| Area | Original | Refined |
-|------|----------|---------|
-| U-Net | Basic skip connections | + Attention gates, Dropout, He init |
-| Loss | BCE only | BCE + Dice combined |
-| Classifier | Single linear layer | 2-layer head with Dropout |
-| Training | Frozen backbone all epochs | Gradual unfreezing at epoch 5 |
-| Augmentation | Basic flips + rotation | + Affine, ColorJitter, Normalize |
-| Metrics | Accuracy only | + Dice, IoU |
-| Inference | Otsu threshold | Otsu + morphological cleanup |
-| Visualization | matplotlib plot | Colored overlay + bounding box |
 
 ---
 
