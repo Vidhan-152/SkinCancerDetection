@@ -1,0 +1,10 @@
+# Model weights — too large for GitHub
+models/*.pth
+
+# Data folders
+data/
+
+# Python cache
+__pycache__/
+*.pyc
+.env
